@@ -1,0 +1,66 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>LifeSport</title>
+    <script src="../Static/JS/index.js"></script>
+    <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" defer src="../Static/JS/testing.js"></script>
+    <!-- Подключение Javascript внутри страницы-->
+    <!--<script>
+        let age = prompt("Введите ваш возраст");
+
+        if (age >= 18) {
+            alert("Приветствуем на LifeSpot! " + new Date().toLocaleString());
+        }
+        else {
+            alert("Данный сайт имеет возрастные ограничения, до свидания");
+            //window.location.href = "http://www.google.com"
+            window.location.href = "https://youtu.be/1X2dUnEp5Ag?si=67FHpItpHS0JLM0a"/*Так прикольнее*/
+        }
+    </script>-->
+</head>
+<body>
+    <header id="header-index">
+        <!--Заголовок страницы-->
+        <h1>LifeSpot - прямые трансляции с улиц</h1>
+        <!--Параграф-->
+        <p>Покажем, что происходит прямо сейчас</p>
+        <!-- Поле поиска -->
+        <input type="text" id="search" placeholder="Поиск трансляций...">
+    </header>
+    <div class="navbar">
+        <!--Сайд-бар страницы-->
+        <aside id="sidebar">
+            <div class="navbar">
+                <a href="/"><p>Все трансляции</p></a>
+                <a href="/"><p>О проекте</p></a>
+            </div>
+        </aside>
+    </div>
+    <div class="bordered">
+
+        <!--Нью-Йорк-->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4Pt5zdmZ520?si=WZwtVy6rIQjsU1ju" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/srlpC5tmhYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+            <h3 class="video-title">Нью-Йорк, Центральный Парк</h3>
+        </div>
+        <!--Санкт-Петербург-->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UaV9T7wkrvs?si=Kkqy1Ce_34A_fB1P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/wCcMcaiRbhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+            <h3 class="video-title">Санкт-Петербург за два дня</h3>
+        </div>
+        <!--Лондон-->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JplMzss6_YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="video-title">Лондон, автобусный маршрут</h3>
+        </div>
+    </div>
+    <footer>
+        <p>LifeSpot - все права защищены</p>
+        <p>Связаться с нами: contact@lifespot.ru</p>
+    </footer>
+</body>
+</html>

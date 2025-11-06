@@ -1,0 +1,98 @@
+﻿/* Простые селекторы*/
+.video-container {
+    display: inline-block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.navbar {
+    color: darkgray;
+    padding-left: 15%;
+}
+    /* Стили панели навигации при наведении мышью */
+.navbar p:hover {
+        color: aliceblue;
+}
+header {
+    position: relative;
+    z-index: 2;
+}
+header {
+    padding-left: 1%;
+    padding-top: 1.2%;
+}
+/*Глобальные стили для хедеров на всём сайте*/
+header {
+    color: black;
+    padding-left: 1%;
+    padding-top: 1.2%;
+}
+/*Стиль хедера для главной страницы имеет приоритет,
+так как используется селектор по идентификатору*/
+#header-index {
+    color: #44453f;
+}
+
+#search {
+    display: block;
+    margin-top: 8px;
+    margin-left: 12%; /* отступ больше ширины сайдбара */
+    width: 30%;
+    padding: 6px 10px;
+    font-size: medium;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+}
+
+    /*  Подсветка при фокусе */
+#search:focus {
+        border-color: #0078d7;
+        box-shadow: 0 0 5px #0078d7;
+        background-color: #fdfdfd;
+}
+
+footer {
+    margin-top: auto; /* подталкивает footer вниз */
+    /*    position: absolute; так footer и блок с Лондоном накладывались друг на друга*/
+    bottom: 0;
+    font-size: medium;
+    color: dimgrey;
+    line-height: 66%; 
+    padding-left: 1%;
+}
+
+aside {
+    height: 100%; /* Высота в полный размер. Этот параметр можно убрать, если вы хотите выставлять высоту автоматически */
+    width: 10%;
+    position: absolute; /* Фиксированная позиция сайд-бара. Так он будет оставаться на месте при скроллинге */
+    z-index: 1; /* Сайд-бар будет поверх остальных элементов */
+    top: 0; /* Сайдбар будет в самой верхней части страницы */
+    left: 0;
+    background-color: #111; /* Черный цвет фона (задан в виде кода) */
+    overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+    padding-top: 2%;
+    font-size: large;
+}
+    aside .navbar p {
+        color: #ddd; /* светло-серый — хорошо читается на #111 */
+        margin: 0.5em 0;
+        transition: color 0.3s;
+    }
+
+        aside .navbar p:hover {
+            color: #ffffff; /* подсветка при наведении */
+        }
+
+body {
+    /*    padding-left: 11%;*/
+        padding-left: 11%;
+}
+/* Комбинированный селектор - применяется ко всем элементам */
+header, footer, aside, body, .navbar, .video-container {
+    font-family: "Helvetica 65 Medium", sans-serif;
+}
+header, footer, body, .video-container {
+    background-color: linen;
+}
